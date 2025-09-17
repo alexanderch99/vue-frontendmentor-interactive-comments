@@ -6,7 +6,10 @@ import vueDevTools from "vite-plugin-vue-devtools";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/vue-frontendmentor-interactive-comments/dist/",
+  base: "/vue-frontendmentor-interactive-comments/",
+  build: {
+    outDir: "./",
+  },
   plugins: [vue(), vueDevTools()],
   resolve: {
     alias: {
